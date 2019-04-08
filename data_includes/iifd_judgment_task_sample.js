@@ -2,17 +2,12 @@
 // See the documentation for more information:
 // 		https://lab.florianschwarz.net/PennController/wiki/documentation/
 
-PennController.Sequence( "instructions", randomize(startsWith("item") );
+PennController.Sequence( "instructions", randomize("itemNameHERE");
           //ACTION: check order of these items
 PennController.ResetPrefix(null);
 PennController.AddHost("http://web-risc.ens.fr/~rdudley/sample/");
           //ACTION: update name of server if necessary
           //ACTION: make sure files can be acquired in zipped version
-
-
-
-PennController.CheckPreloaded( startsWith("item") )
-    .label( "preload" );
 
 PennController( "instructions" ,
   newButton("start", "Start the pilot")
@@ -24,7 +19,7 @@ PennController( "instructions" ,
 
         //ACTION: insert template for pulling from CSV file here
 PennController.Template(
-    row => PennController( "item" ,
+    row => PennController( "item",
         newAudio("domain sentence", row.DomainIntro)
           .play() // Immediately play the audio file
         ,
