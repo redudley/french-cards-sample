@@ -11,7 +11,7 @@ PennController.AddHost("http://web-risc.ens.fr/~rdudley/sample/");
 
 
 
-PennController.CheckPreloaded( startsWith("critical"), startsWith("control") )
+PennController.CheckPreloaded( startsWith("item") )
     .label( "preload" );
 
 PennController( "instructions" ,
@@ -23,7 +23,7 @@ PennController( "instructions" ,
 
 
         //ACTION: insert template for pulling from CSV file here
-PennController.Template( PennController.defaultTable.filter("row","item") ,
+PennController.Template( PennController.defaultTable.filter("Item","item") ,
     row => PennController( "item" ,
         newAudio("domain sentence", row.DomainIntro)
           .play() // Immediately play the audio file
