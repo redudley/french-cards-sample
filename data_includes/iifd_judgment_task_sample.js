@@ -2,7 +2,7 @@
 // See the documentation for more information:
 // 		https://lab.florianschwarz.net/PennController/wiki/documentation/
 
-PennController.Sequence( "instructions", shuffle(randomize(startsWith("control")) , randomize(startsWith("critical"))));
+PennController.Sequence( "instructions", randomize(startsWith("item") );
           //ACTION: check order of these items
 PennController.ResetPrefix(null);
 PennController.AddHost("http://web-risc.ens.fr/~rdudley/sample/");
@@ -23,8 +23,8 @@ PennController( "instructions" ,
 
 
         //ACTION: insert template for pulling from CSV file here
-PennController.Template( PennController.defaultTable.filter("row","controlsample") ,
-    row => PennController( "itemNameHERE" ,
+PennController.Template( PennController.defaultTable.filter("row","item") ,
+    row => PennController( "item" ,
         newAudio("domain sentence", row.DomainIntro)
           .play() // Immediately play the audio file
         ,
