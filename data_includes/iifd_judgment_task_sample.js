@@ -23,7 +23,7 @@ PennController( "instructions" ,
 
 
         //ACTION: insert template for pulling from CSV file here
-PennController.Template( PennController.defaultTable.filter("Item","item") ,
+PennController.Template(
     row => PennController( "item" ,
         newAudio("domain sentence", row.DomainIntro)
           .play() // Immediately play the audio file
