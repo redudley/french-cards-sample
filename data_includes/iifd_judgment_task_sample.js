@@ -2,22 +2,13 @@
 // See the documentation for more information:
 // 		https://lab.florianschwarz.net/PennController/wiki/documentation/
 
-PennController.Sequence( "preload", "instructions", randomize("item");
+PennController.Sequence(randomize("item");
           //ACTION: check order of these items
 PennController.ResetPrefix(null);
 PennController.AddHost("http://web-risc.ens.fr/~rdudley/sample/");
           //ACTION: update name of server if necessary
           //ACTION: make sure files can be acquired in zipped version
 
-PennController.CheckPreloaded( startsWith("item") )
-    .label( "preload" );
-
-PennController( "instructions" ,
-  newButton("start", "Start the pilot")
-        //ACTION: change text of this button to french
-      .print()
-      .wait()
-);
 
 
         //ACTION: insert template for pulling from CSV file here
