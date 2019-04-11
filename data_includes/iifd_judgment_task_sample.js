@@ -41,7 +41,6 @@ PennController.Template(
           .settings.add(   750,   0, getImage("domainImage4") )
           .settings.add(   1000,  0, getImage("domainImage5") )
           .print()
-          .wait()
           .remove()
         ,
         newAudio("domain sentence", row.DomainIntro)
