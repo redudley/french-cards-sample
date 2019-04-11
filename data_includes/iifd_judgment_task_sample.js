@@ -3,6 +3,7 @@
 // 		https://lab.florianschwarz.net/PennController/wiki/documentation/
 
           //ACTION: check order of these items
+Penncontroller.Sequence ( "items");
 PennController.ResetPrefix(null);
 PennController.AddHost("http://web-risc.ens.fr/~rdudley/sample/");
           //ACTION: update name of server if necessary
@@ -11,8 +12,8 @@ PennController.AddHost("http://web-risc.ens.fr/~rdudley/sample/");
 
 
         //ACTION: insert template for pulling from CSV file here
-PennController.Template(
-    row => PennController(
+PennController.Template("sample_items.csv",
+    row => PennController("items",
         newAudio("domain sentence", row.DomainIntro)
           .play() // Immediately play the audio file
         ,
@@ -49,10 +50,6 @@ PennController.Template(
             .print()
             .wait()
         ,
-    )
-);
-PennController.Template(
-    row => PennController(    
         newAudio("test sentence", row.Premises)
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
