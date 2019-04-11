@@ -50,6 +50,7 @@ PennController.Template(
               //ACTION: change text of this button to french
             .print()
             .wait()
+            .remove()
         ,
         newAudio("test sentence", row.Premises)
           .play() // Immediately play the audio file
