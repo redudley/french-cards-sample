@@ -16,6 +16,7 @@ PennController.Template(
     row => PennController("domain_trial",
         newAudio("domain sentence", row.DomainIntro)
           .play() // Immediately play the audio file
+          .wait()
         ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(125,50)
