@@ -3,7 +3,7 @@
 // 		https://lab.florianschwarz.net/PennController/wiki/documentation/
 
           //ACTION: check order of these items
-PennController.Sequence( "domain_trial" , "judgment_trial" );
+PennController.Sequence( shuffle("domain_trial" , "judgment_trial") );
 PennController.ResetPrefix(null);
 PennController.AddHost("http://web-risc.ens.fr/~rdudley/sample/");
           //ACTION: update name of server if necessary
@@ -51,7 +51,7 @@ PennController.Template(
             .wait()
         ,
     )
-  );        
+  );
 PennController.Template(
     row => PennController("judgment_trial",
         newAudio("test sentence", row.Premises)
