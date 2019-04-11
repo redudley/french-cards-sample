@@ -49,6 +49,10 @@ PennController.Template(
             .print()
             .wait()
         ,
+    )
+);
+PennController.Template(
+    row => PennController(    
         newAudio("test sentence", row.Premises)
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
@@ -92,5 +96,4 @@ PennController.Template(
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
           .wait()
-    )
   );
