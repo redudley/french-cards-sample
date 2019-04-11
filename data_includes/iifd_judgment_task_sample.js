@@ -52,7 +52,7 @@ PennController.Template(
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "Ready for the next item")
+        newButton("ready", "entendre l'indice")
               //ACTION: change text of this button to french
             .print()
             .wait()
