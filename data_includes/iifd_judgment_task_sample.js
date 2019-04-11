@@ -16,6 +16,7 @@ PennController.Template(
     row => PennController("domain_trial",
         newAudio("domain sentence", row.DomainIntro)
           .play() // Immediately play the audio file
+          .wait()
           .remove()
         ,
         newImage("domainImage1", row.domainImage1)
@@ -45,11 +46,13 @@ PennController.Template(
           .settings.add(   750,   0, getImage("domainImage4") )
           .settings.add(   1000,  0, getImage("domainImage5") )
           .print()
+          .wait()
           .remove()
         ,
         newButton("ready", "Ready for the next item")
               //ACTION: change text of this button to french
             .print()
+            .wait()
             .remove()
         ,
         newAudio("test sentence", row.Premises)
