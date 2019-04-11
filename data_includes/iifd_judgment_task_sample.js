@@ -2,7 +2,6 @@
 // See the documentation for more information:
 // 		https://lab.florianschwarz.net/PennController/wiki/documentation/
 
-PennController.Sequence(randomize("item");
           //ACTION: check order of these items
 PennController.ResetPrefix(null);
 PennController.AddHost("http://web-risc.ens.fr/~rdudley/sample/");
@@ -13,7 +12,7 @@ PennController.AddHost("http://web-risc.ens.fr/~rdudley/sample/");
 
         //ACTION: insert template for pulling from CSV file here
 PennController.Template(
-    row => PennController( "item",
+    row => PennController(
         newAudio("domain sentence", row.DomainIntro)
           .play() // Immediately play the audio file
         ,
