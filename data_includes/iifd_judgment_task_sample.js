@@ -81,7 +81,7 @@ PennController.Template(
         ,
         newCanvas("judgment", 500, 200) //images need to be shuffled, or no?
           .settings.add(   0,     0, getImage("judgmentImage1") )
-          .settings.add(   250,   0, getImage("judgmentImage2") )
+          .settings.add(   100,   0, getImage("judgmentImage2") )
           .settings.add(   500,   0, getImage("judgmentImage3") )
           .settings.add(   750,   0, getImage("judgmentImage4") )
           .settings.add(   1000,  0, getImage("judgmentImage5") )
