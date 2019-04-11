@@ -87,6 +87,7 @@ PennController.Template(
         newImage("judgmentImage5", row.judgmentImage5)
           .settings.size(96,120)
         //ACTION: figure out necessary picture size and reset
+        ,
         newImage("judgmentImage6", row.judgmentImage6)
           .settings.size(96,120)
         //ACTION: figure out necessary picture size and reset
