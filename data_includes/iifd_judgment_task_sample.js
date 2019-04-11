@@ -47,7 +47,7 @@ PennController.Template(
           .settings.add(   10,    10, getImage("domainImage1") )
           .settings.add(   106,   10, getImage("domainImage2") )
           .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   299,   10, getImage("domainImage4") )
+          .settings.add(   298,   10, getImage("domainImage4") )
           .settings.add(   394,   10, getImage("domainImage5") )
           .settings.add(   490,   10, getImage("domainImage6") )
           .settings.css("border", "solid 2px black")
@@ -76,43 +76,37 @@ PennController.Template(
         ,
         newImage("judgmentImage1", row.judgmentImage1)
           .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("judgmentImage2", row.judgmentImage2)
           .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("judgmentImage3", row.judgmentImage3)
           .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("judgmentImage4", row.judgmentImage4)
           .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("judgmentImage5", row.judgmentImage5)
           .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("judgmentImage6", row.judgmentImage6)
           .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
         //ACTION: figure out necessary picture size and reset
         ,
-        newCanvas("judgment", 576, 200) //images need to be shuffled, or no?
-          .settings.add(   0,    0,   getImage("judgmentImage1") )
-          .settings.add(   96,   0,   getImage("judgmentImage2") )
-          .settings.add(   192,  0,   getImage("judgmentImage3") )
-          .settings.add(   288,  0,   getImage("judgmentImage4") )
-          .settings.add(   384,  0,   getImage("judgmentImage5") )
-          .settings.add(   480,  0,   getImage("judgmentImage6") )
-          .settings.add(   144,  168, getImage("happy") )
-          .settings.add(   336,  168, getImage("sad") )
+        newCanvas("judgment", 576, 220) //images need to be shuffled, or no?
+          .settings.add(   0,    10,   getImage("judgmentImage1") )
+          .settings.add(   96,   10,   getImage("judgmentImage2") )
+          .settings.add(   192,  10,   getImage("judgmentImage3") )
+          .settings.add(   288,  10,   getImage("judgmentImage4") )
+          .settings.add(   384,  10,   getImage("judgmentImage5") )
+          .settings.add(   480,  10,   getImage("judgmentImage6") )
+          .settings.add(   144,  178, getImage("happy") )
+          .settings.add(   336,  178, getImage("sad") )
           .print()
         ,
         newSelector("choice")
