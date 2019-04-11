@@ -11,7 +11,7 @@ PennController.AddHost("http://web-risc.ens.fr/~rdudley/sample/");
 
 
         //ACTION: insert template for pulling from CSV file here
-PennController.Template("sample_items.csv",
+PennController.Template(
     row => PennController(
         newAudio("domain sentence", row.DomainIntro)
           .play() // Immediately play the audio file
