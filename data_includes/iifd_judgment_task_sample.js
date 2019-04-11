@@ -38,8 +38,10 @@ PennController.Template(
           .settings.add(   0,     0, getImage("domainImage1") )
           .settings.add(   250,   0, getImage("domainImage2") )
           .settings.add(   500,   0, getImage("domainImage3") )
-          .settings.add(   750,   0, getImage("domainImage4") )
-          .settings.add(   1000,  0, getImage("domainImage5") )
+          .settings.add(   750,   0, getImage("blank.png") )
+          .settings.add(   1000,   0, getImage("domainImage4") )
+          .settings.add(   1250,  0, getImage("domainImage5") )
+          .settings.css("border", "solid 1px black")
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
