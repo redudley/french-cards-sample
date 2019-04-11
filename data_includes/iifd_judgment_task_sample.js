@@ -16,26 +16,32 @@ PennController.Template(
     row => PennController("domain_trial",
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
+          .settings.css("border", "solid 1px blue")
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("domainImage2", row.domainImage2)
           .settings.size(96,120)
+          .settings.css("border", "solid 1px blue")
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("domainImage3", row.domainImage3)
           .settings.size(96,120)
+          .settings.css("border", "solid 1px blue")
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("domainImage4", row.domainImage4)
           .settings.size(96,120)
+          .settings.css("border", "solid 1px blue")
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
+          .settings.css("border", "solid 1px blue")
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("domainImage6", row.domainImage6)
           .settings.size(96,120)
+          .settings.css("border", "solid 1px blue")
         //ACTION: figure out necessary picture size and reset
         ,
         newCanvas("domain", 576, 120) //images need to be shuffled, or no?
@@ -45,7 +51,7 @@ PennController.Template(
           .settings.add(   288,   0, getImage("domainImage4") )
           .settings.add(   384,  0, getImage("domainImage5") )
           .settings.add(   480,  0, getImage("domainImage6") )
-          .settings.css("border", "solid 1px black")
+          .settings.css("border", "solid 5px black")
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
@@ -71,26 +77,32 @@ PennController.Template(
         ,
         newImage("judgmentImage1", row.judgmentImage1)
           .settings.size(96,120)
+          .settings.css("border", "solid 1px blue")
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("judgmentImage2", row.judgmentImage2)
           .settings.size(96,120)
+          .settings.css("border", "solid 1px blue")
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("judgmentImage3", row.judgmentImage3)
           .settings.size(96,120)
+          .settings.css("border", "solid 1px blue")
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("judgmentImage4", row.judgmentImage4)
           .settings.size(96,120)
+          .settings.css("border", "solid 1px blue")
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("judgmentImage5", row.judgmentImage5)
           .settings.size(96,120)
+          .settings.css("border", "solid 1px blue")
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("judgmentImage6", row.judgmentImage6)
           .settings.size(96,120)
+          .settings.css("border", "solid 1px blue")
         //ACTION: figure out necessary picture size and reset
         ,
         newCanvas("judgment", 576, 200) //images need to be shuffled, or no?
