@@ -54,6 +54,7 @@ PennController.Template(
         ,
         newButton("ready", "entendre l'indice")
               //ACTION: change text of this button to french
+            .settings.center()
             .print()
             .wait()
             .remove()
