@@ -3,7 +3,7 @@
 // 		https://lab.florianschwarz.net/PennController/wiki/documentation/
 
           //ACTION: check order of these items
-PennController.Sequence( shuffle("domain_trial" , "judgment_trial") );
+PennController.Sequence( shuffle("domain_trial") );
 PennController.ResetPrefix(null);
 PennController.AddHost("http://web-risc.ens.fr/~rdudley/sample/");
           //ACTION: update name of server if necessary
@@ -16,6 +16,7 @@ PennController.Template(
     row => PennController("domain_trial",
         newAudio("domain sentence", row.DomainIntro)
           .play() // Immediately play the audio file
+          .remove()
         ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(125,50)
@@ -44,17 +45,13 @@ PennController.Template(
           .settings.add(   750,   0, getImage("domainImage4") )
           .settings.add(   1000,  0, getImage("domainImage5") )
           .print()
-          .wait()
+          .remove()
         ,
         newButton("ready", "Ready for the next item")
               //ACTION: change text of this button to french
             .print()
-            .wait()
+            .remove()
         ,
-    )
-  );
-PennController.Template(
-    row => PennController("judgment_trial",
         newAudio("test sentence", row.Premises)
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
