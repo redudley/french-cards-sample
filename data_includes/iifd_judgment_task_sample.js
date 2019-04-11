@@ -47,7 +47,7 @@ PennController.Template(
           .settings.add(   10,    10, getImage("domainImage1") )
           .settings.add(   106,   10, getImage("domainImage2") )
           .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   298,   10, getImage("domainImage4") )
+          .settings.add(   299,   10, getImage("domainImage4") )
           .settings.add(   394,   10, getImage("domainImage5") )
           .settings.add(   490,   10, getImage("domainImage6") )
           .settings.css("border", "solid 2px black")
