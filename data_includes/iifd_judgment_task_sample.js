@@ -14,9 +14,6 @@ PennController.AddHost("http://web-risc.ens.fr/~rdudley/sample/");
         //ACTION: insert template for pulling from CSV file here
 PennController.Template(
     row => PennController("domain_trial",
-        newImage("blank.png")
-          .settings.size(125,50)
-        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(125,50)
         //ACTION: figure out necessary picture size and reset
@@ -41,7 +38,6 @@ PennController.Template(
           .settings.add(   0,     0, getImage("domainImage1") )
           .settings.add(   250,   0, getImage("domainImage2") )
           .settings.add(   500,   0, getImage("domainImage3") )
-          .settings.add(   750,   0, getImage("blank.png") )
           .settings.add(   1000,   0, getImage("domainImage4") )
           .settings.add(   1250,  0, getImage("domainImage5") )
           .settings.css("border", "solid 1px black")
