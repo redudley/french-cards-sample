@@ -15,31 +15,36 @@ PennController.AddHost("http://web-risc.ens.fr/~rdudley/sample/");
 PennController.Template(
     row => PennController("domain_trial",
         newImage("domainImage1", row.domainImage1)
-          .settings.size(125,50)
+          .settings,.size(144,180)
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("domainImage2", row.domainImage2)
-          .settings.size(125,50)
+          .settings,.size(144,180)
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("domainImage3", row.domainImage3)
-          .settings.size(125,50)
+          .settings,.size(144,180)
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("domainImage4", row.domainImage4)
-          .settings.size(125,50)
+          .settings,.size(144,180)
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("domainImage5", row.domainImage5)
-          .settings.size(125,50)
+          .settings,.size(144,180)
         //ACTION: figure out necessary picture size and reset
         ,
-        newCanvas("domain", 500, 200) //images need to be shuffled, or no?
+        newImage("domainImage6", row.domainImage5)
+          .settings,.size(144,180)
+        //ACTION: figure out necessary picture size and reset
+        ,
+        newCanvas("domain", 864, 180) //images need to be shuffled, or no?
           .settings.add(   0,     0, getImage("domainImage1") )
-          .settings.add(   250,   0, getImage("domainImage2") )
-          .settings.add(   500,   0, getImage("domainImage3") )
-          .settings.add(   1000,   0, getImage("domainImage4") )
-          .settings.add(   1250,  0, getImage("domainImage5") )
+          .settings.add(   144,   0, getImage("domainImage2") )
+          .settings.add(   288,   0, getImage("domainImage3") )
+          .settings.add(   432,   0, getImage("domainImage4") )
+          .settings.add(   576,  0, getImage("domainImage5") )
+          .settings.add(   720,  0, getImage("domainImage6") )
           .settings.css("border", "solid 1px black")
           .print()
         ,
@@ -64,23 +69,23 @@ PennController.Template(
           .settings.size(200,200)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
-          .settings.size(125,50)
+          .settings,.size(144,180)
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("judgmentImage2", row.judgmentImage2)
-          .settings.size(125,50)
+          .settings,.size(144,180)
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("judgmentImage3", row.judgmentImage3)
-          .settings.size(125,50)
+          .settings,.size(144,180)
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("judgmentImage4", row.judgmentImage4)
-          .settings.size(125,50)
+          .settings,.size(144,180)
         //ACTION: figure out necessary picture size and reset
         ,
         newImage("judgmentImage5", row.judgmentImage5)
-          .settings.size(125,50)
+          .settings,.size(144,180)
         //ACTION: figure out necessary picture size and reset
         ,
         newCanvas("judgment", 500, 200) //images need to be shuffled, or no?
